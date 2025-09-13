@@ -1,0 +1,32 @@
+[toolchain]
+package_manager = "yarn"
+
+[features]
+resolution = true
+skip-lint = false
+
+[programs.localnet]
+aqv = "6vwfetAjmKQJCEB38Adxe7phVWw2xfYkwvZyw8CQ6MkT"
+
+[registry]
+url = "https://api.apr.dev"
+
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
+
+[programs.devnet]
+aqv = "AQV111111111111111111111111111111111111111"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "C:\\Users\\ilias\\.config\\solana\\id.json"
+
+[scripts]
+test = "yarn run mocha -t 1000000 tests/"
+
+[toolchain]
+anchor_version = "0.30.1"
